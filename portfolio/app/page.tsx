@@ -1,5 +1,12 @@
-import styles from "./page.module.css";
+import AppHeader from "./components/appHeader";
+
 
 export default function Home() {
-  return <div className={styles.page}>hi</div>;
+  return <div>
+    <AppHeader />
+    <div className="bg-white text-black dark:bg-black dark:text-white p-4">
+      Hello, dark mode!
+    </div>
+
+  </div>;
 }
